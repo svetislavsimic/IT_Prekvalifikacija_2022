@@ -164,3 +164,32 @@ switch (dan) {
   default:
     console.log("Neispravan unos");
 }
+
+//Nas klijent ima domace zivotinje:
+//pas: Zika
+//macka: Mika
+//kornjaca: Rade
+//hrcak:Munja
+//korisnik unese ime a vi mu ispisete koja je to zivotinja
+//Problem koji radi
+let brzina =Number(prompt("Unesi brzinu: "));
+console.log(typeof (brzina));
+
+if (isNaN(brzina)) {        
+    alert("Nisi uneo broj");
+}
+else{
+    if (brzina<30){
+        alert("Ides sporo");    
+     }
+    else if(brzina<=80){
+        alert("Ides normalno");
+    }
+    else if(brzina>80) {
+        alert("Ides brzo");
+    }
+}
+///U typeof mi uvek izbaci Number sta god da napisem u prompt-u, da li string ili number ili simbol.. 
+//To verovatno ima veze sto ga u promptu konvertujemo u Number..
+//Moje nedoumica je kako on uopste uradi if statement sa uslovom da je true (tj.kada unesem text), a uradi??? Tj. kako udje u if statment
+
