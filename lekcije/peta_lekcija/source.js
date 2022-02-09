@@ -76,5 +76,5 @@ let izbaceniElement = voce.splice(2,3);
 Prvi broj - 2 , odredjuje od kog indeksa zelimo da pocnemo sa izbacivanjem, drugi broj - 3 , odredjuje koliko elemenata izbacujemo.
 
 */
-let oceneMatematika = new Array(3, 4, 2, 5);
-console.log(oceneMatematika);
+// let oceneMatematika = new Array(3, 4, 2, 5);
+// console.log(oceneMatematika);
