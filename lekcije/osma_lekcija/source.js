@@ -79,3 +79,20 @@ let razlikaUMasi = absTwo(simaMasa, nenadMasa);
 // } else {
 //   razlikaUMasi = nenadMasa - simaMasa;
 // }
+const pera = {
+  godiste: 2000,
+  starost: function (god) {
+    if (god - this.godiste > 10) {
+      console.log(`Godina je ${god}`);
+      return this.starost(god - 1);
+    } else {
+      console.log("Sada mozemo da se vratimo iz rekurzije");
+      return god - this.godiste;
+    }
+  },
+};
+
+console.log(pera.starost(2015));
+
+const dani = ["Ponedeljak", "Utorak", "Sreda", "Cetvrtak", "Petak"];
+let dan = dani[2];
